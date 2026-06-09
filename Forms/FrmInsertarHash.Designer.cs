@@ -35,18 +35,17 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new System.Windows.Forms.Label();
             this.txtPalabra = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl1 = new System.Windows.Forms.Label();
+            this.panelControl1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,11 +123,10 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Location = new System.Drawing.Point(69, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(109, 31);
+            this.labelControl2.AutoSize = true;
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Inserción";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
@@ -155,19 +153,17 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Location = new System.Drawing.Point(52, 79);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(218, 23);
+            this.labelControl1.AutoSize = true;
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese Palabra a insertar :";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // panelControl1
             // 
-            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelControl1.Controls.Add(this.panel1);
             this.panelControl1.Location = new System.Drawing.Point(-2, 1);
             this.panelControl1.Name = "panelControl1";
@@ -192,7 +188,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -201,13 +196,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private System.Windows.Forms.Label labelControl1;
+        private System.Windows.Forms.Panel panelControl1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtPalabra;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.Label labelControl2;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;

@@ -36,6 +36,9 @@ namespace proyectEstructura
         {
             InitializeComponent();
 
+            // insertar las palabras de la dataGrid en el textboxPalabra
+            dgvPalabras.CellClick += dgvPalabras_CellClick;
+
             // Centrar el formulario en pantalla
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -110,6 +113,16 @@ namespace proyectEstructura
         {
             dgvPalabras.DataSource = null;
             dgvPalabras.DataSource = HashGlobal.TablaHash.ObtenerRegistros();
+        }
+
+        private void dgvPalabras_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                txtPalabra.Text = dgvPalabras.Rows[e.RowIndex]
+                                             .Cells[1]
+                                             .Value?.ToString();
+            }
         }
 
         /// Regresa al principal menu 
