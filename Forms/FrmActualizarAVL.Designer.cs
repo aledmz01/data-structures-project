@@ -1,16 +1,16 @@
-﻿namespace proyectEstructura
+﻿namespace proyectEstructura.Forms
 {
-    partial class FrmInsertarHash
+    partial class FrmActualizarAVL
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -37,16 +37,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl2 = new System.Windows.Forms.Label();
             this.txtPalabra = new System.Windows.Forms.TextBox();
-            this.btnInsertar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.labelControl1 = new System.Windows.Forms.Label();
-            this.panelControl1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPalabraAct = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,20 +55,20 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(741, 314);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(734, 314);
+            this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel4.Controls.Add(this.flowLayoutPanel1);
-            this.panel4.Location = new System.Drawing.Point(377, 29);
+            this.panel4.Location = new System.Drawing.Point(371, 26);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(320, 233);
-            this.panel4.TabIndex = 5;
+            this.panel4.Size = new System.Drawing.Size(320, 243);
+            this.panel4.TabIndex = 6;
             // 
             // flowLayoutPanel1
             // 
@@ -90,10 +90,10 @@
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnRegresar.Location = new System.Drawing.Point(650, 274);
+            this.btnRegresar.Location = new System.Drawing.Point(646, 284);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegresar.TabIndex = 2;
+            this.btnRegresar.TabIndex = 3;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
@@ -101,85 +101,93 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.txtPalabraAct);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtPalabra);
-            this.panel2.Controls.Add(this.btnInsertar);
+            this.panel2.Controls.Add(this.btnActualizar);
             this.panel2.Controls.Add(this.labelControl1);
-            this.panel2.Location = new System.Drawing.Point(26, 29);
+            this.panel2.Location = new System.Drawing.Point(25, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 233);
+            this.panel2.Size = new System.Drawing.Size(309, 243);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.labelControl2);
-            this.panel3.Location = new System.Drawing.Point(36, 19);
+            this.panel3.Location = new System.Drawing.Point(24, 19);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 36);
+            this.panel3.Size = new System.Drawing.Size(258, 36);
             this.panel3.TabIndex = 4;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // labelControl2
             // 
-            this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(69, 2);
-            this.labelControl2.Name = "labelControl2";
             this.labelControl2.AutoSize = true;
+            this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Location = new System.Drawing.Point(59, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(173, 31);
             this.labelControl2.TabIndex = 5;
-            this.labelControl2.Text = "Inserción";
+            this.labelControl2.Text = "Actualización";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtPalabra
             // 
-            this.txtPalabra.Location = new System.Drawing.Point(36, 108);
+            this.txtPalabra.Location = new System.Drawing.Point(24, 95);
             this.txtPalabra.Name = "txtPalabra";
-            this.txtPalabra.Size = new System.Drawing.Size(248, 21);
+            this.txtPalabra.Size = new System.Drawing.Size(258, 20);
             this.txtPalabra.TabIndex = 2;
-            this.txtPalabra.TextChanged += new System.EventHandler(this.txtPalabra_TextChanged);
             // 
-            // btnInsertar
+            // btnActualizar
             // 
-            this.btnInsertar.BackColor = System.Drawing.Color.Yellow;
-            this.btnInsertar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(116, 158);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(88, 35);
-            this.btnInsertar.TabIndex = 3;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = false;
-            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            this.btnActualizar.BackColor = System.Drawing.Color.HotPink;
+            this.btnActualizar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(102, 205);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(120, 35);
+            this.btnActualizar.TabIndex = 3;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(52, 79);
-            this.labelControl1.Name = "labelControl1";
             this.labelControl1.AutoSize = true;
+            this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 12.75F);
+            this.labelControl1.Location = new System.Drawing.Point(54, 73);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(212, 19);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Ingrese Palabra a insertar :";
+            this.labelControl1.Text = "Ingrese la palabra a actualizar:";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
-            // panelControl1
+            // label1
             // 
-            this.panelControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panelControl1.Controls.Add(this.panel1);
-            this.panelControl1.Location = new System.Drawing.Point(-2, 1);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(746, 316);
-            this.panelControl1.TabIndex = 0;
-            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12.75F);
+            this.label1.Location = new System.Drawing.Point(4, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(302, 19);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ingrese la palabra por la cual se actualizara:";
             // 
-            // FrmInsertarHash
+            // txtPalabraAct
+            // 
+            this.txtPalabraAct.Location = new System.Drawing.Point(24, 164);
+            this.txtPalabraAct.Name = "txtPalabraAct";
+            this.txtPalabraAct.Size = new System.Drawing.Size(258, 20);
+            this.txtPalabraAct.TabIndex = 6;
+            // 
+            // FrmActualizarAVL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 310);
-            this.Controls.Add(this.panelControl1);
-            this.Name = "FrmInsertarHash";
-            this.Text = "Pantalla de Inserción";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(731, 312);
+            this.Controls.Add(this.panel1);
+            this.Name = "FrmActualizarAVL";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmActualizarAVL_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -188,7 +196,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -196,17 +203,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelControl1;
-        private System.Windows.Forms.Panel panelControl1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtPalabra;
-        private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label labelControl2;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dgvPalabras;
+        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label labelControl2;
+        private System.Windows.Forms.TextBox txtPalabra;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label labelControl1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPalabraAct;
     }
 }
-

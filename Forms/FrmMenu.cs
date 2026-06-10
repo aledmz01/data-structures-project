@@ -34,5 +34,21 @@ namespace proyectEstructura.Forms
             this.Hide();
 
         }
+
+        private void btnAct_Click(object sender, EventArgs e)
+        {
+            FrmActualizarAVL frm = new FrmActualizarAVL();
+            frm.Show();
+
+            this.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaAVL frm = new FrmBusquedaAVL();
+            frm.Show();
+
+            this.Hide();
+        }
     }
 }

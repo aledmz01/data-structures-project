@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dgvPalabras = new System.Windows.Forms.DataGridView();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,17 +40,13 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.labelControl1 = new System.Windows.Forms.Label();
             this.panelControl1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dgvPalabras = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-           
-            this.panelControl1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,6 +59,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(734, 314);
             this.panel1.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel4.Controls.Add(this.flowLayoutPanel1);
+            this.panel4.Location = new System.Drawing.Point(371, 26);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(320, 243);
+            this.panel4.TabIndex = 6;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dgvPalabras);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 197);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // dgvPalabras
+            // 
+            this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPalabras.Location = new System.Drawing.Point(3, 3);
+            this.dgvPalabras.Name = "dgvPalabras";
+            this.dgvPalabras.Size = new System.Drawing.Size(290, 194);
+            this.dgvPalabras.TabIndex = 0;
+            this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -95,10 +120,11 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.AutoSize = true;
+            this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Location = new System.Drawing.Point(59, 2);
             this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(156, 31);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Eliminación";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
@@ -107,8 +133,9 @@
             // 
             this.txtPalabra.Location = new System.Drawing.Point(24, 113);
             this.txtPalabra.Name = "txtPalabra";
-            this.txtPalabra.Size = new System.Drawing.Size(258, 21);
+            this.txtPalabra.Size = new System.Drawing.Size(258, 20);
             this.txtPalabra.TabIndex = 2;
+            this.txtPalabra.TextChanged += new System.EventHandler(this.txtPalabra_TextChanged);
             // 
             // btnEliminar
             // 
@@ -124,14 +151,14 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.AutoSize = true;
+            this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Location = new System.Drawing.Point(41, 84);
             this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(235, 23);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese Palabra a eliminar :";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
-
             // 
             // panelControl1
             // 
@@ -141,32 +168,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(747, 316);
             this.panelControl1.TabIndex = 1;
-
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel4.Controls.Add(this.flowLayoutPanel1);
-            this.panel4.Location = new System.Drawing.Point(371, 26);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(320, 243);
-            this.panel4.TabIndex = 6;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.dgvPalabras);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 19);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 197);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // dgvPalabras
-            // 
-            this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(3, 3);
-            this.dgvPalabras.Name = "dgvPalabras";
-            this.dgvPalabras.Size = new System.Drawing.Size(290, 194);
-            this.dgvPalabras.TabIndex = 0;
             // 
             // FrmEliminarHash
             // 
@@ -177,15 +178,14 @@
             this.Name = "FrmEliminarHash";
             this.Text = "Pantalla de Eliminación";
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-
             this.panelControl1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.ResumeLayout(false);
 
         }

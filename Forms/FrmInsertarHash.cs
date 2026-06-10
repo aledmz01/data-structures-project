@@ -125,6 +125,7 @@ namespace proyectEstructura
 
             if (agregado)
             {
+                AVLGlobal.Arbol.Insertar(palabra);
                 MessageBox.Show(
             this,
             "Palabra insertada correctamente.",

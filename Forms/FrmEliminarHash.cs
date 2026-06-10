@@ -82,6 +82,7 @@ namespace proyectEstructura
 
             if (eliminado)
             {
+                AVLGlobal.Arbol.Eliminar(palabra);
                 MessageBox.Show(
             this,
             "Palabra eliminada",
@@ -136,6 +137,16 @@ namespace proyectEstructura
             }
 
             this.Close();
+        }
+
+        private void dgvPalabras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtPalabra_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
