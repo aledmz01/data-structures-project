@@ -51,6 +51,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmActualizarAVL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmActualizarAVL.Designer.cs">
+      <DependentUpon>FrmActualizarAVL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBusquedaAVL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBusquedaAVL.Designer.cs">
+      <DependentUpon>FrmBusquedaAVL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmInsertarHash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,12 +81,21 @@
     <Compile Include="Forms\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\NodoAVL.cs" />
     <Compile Include="Models\RegistroHash.cs" />
+    <Compile Include="Structures\AVLGloval.cs" />
+    <Compile Include="Structures\AVLPalabras.cs" />
     <Compile Include="Structures\HashGlobal.cs" />
     <Compile Include="Structures\HashPalabras.cs" />
     <Compile Include="Palabra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmActualizarAVL.resx">
+      <DependentUpon>FrmActualizarAVL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBusquedaAVL.resx">
+      <DependentUpon>FrmBusquedaAVL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmInsertarHash.resx">
       <DependentUpon>FrmInsertarHash.cs</DependentUpon>
     </EmbeddedResource>
