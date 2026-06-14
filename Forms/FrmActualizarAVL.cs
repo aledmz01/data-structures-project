@@ -82,6 +82,8 @@ namespace proyectEstructura.Forms
 
             if (menu != null)
             {
+                menu.InitTrie();
+                menu.checkAutocomplete();
                 menu.Show();
             }
 

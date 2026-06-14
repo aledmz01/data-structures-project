@@ -34,12 +34,12 @@
             this.dgvPalabras = new System.Windows.Forms.DataGridView();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl2 = new System.Windows.Forms.Label();
             this.txtPalabra = new System.Windows.Forms.TextBox();
             this.labelControl1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -55,42 +55,49 @@
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(739, 317);
+            this.panel1.Size = new System.Drawing.Size(1971, 756);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel4.Controls.Add(this.flowLayoutPanel1);
-            this.panel4.Location = new System.Drawing.Point(377, 29);
+            this.panel4.Location = new System.Drawing.Point(1005, 69);
+            this.panel4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(320, 233);
+            this.panel4.Size = new System.Drawing.Size(853, 556);
             this.panel4.TabIndex = 5;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.dgvPalabras);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 19);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(35, 45);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 197);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(781, 470);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // dgvPalabras
             // 
             this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(3, 3);
+            this.dgvPalabras.Location = new System.Drawing.Point(8, 7);
+            this.dgvPalabras.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dgvPalabras.Name = "dgvPalabras";
-            this.dgvPalabras.Size = new System.Drawing.Size(290, 194);
+            this.dgvPalabras.RowHeadersWidth = 102;
+            this.dgvPalabras.Size = new System.Drawing.Size(773, 463);
             this.dgvPalabras.TabIndex = 0;
             this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnRegresar.Location = new System.Drawing.Point(650, 274);
+            this.btnRegresar.Location = new System.Drawing.Point(1733, 653);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegresar.Size = new System.Drawing.Size(200, 55);
             this.btnRegresar.TabIndex = 2;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -104,35 +111,60 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtPalabra);
             this.panel2.Controls.Add(this.labelControl1);
-            this.panel2.Location = new System.Drawing.Point(26, 29);
+            this.panel2.Location = new System.Drawing.Point(69, 69);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 233);
+            this.panel2.Size = new System.Drawing.Size(853, 556);
             this.panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.75F);
+            this.label2.Location = new System.Drawing.Point(261, 277);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 46);
+            this.label2.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.75F);
+            this.label1.Location = new System.Drawing.Point(85, 231);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(648, 46);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "La tabla mostrara las palabras identicas";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.labelControl2);
-            this.panel3.Location = new System.Drawing.Point(36, 19);
+            this.panel3.Location = new System.Drawing.Point(96, 45);
+            this.panel3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 36);
+            this.panel3.Size = new System.Drawing.Size(661, 86);
             this.panel3.TabIndex = 4;
             // 
             // labelControl2
             // 
             this.labelControl2.AutoSize = true;
             this.labelControl2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(69, 2);
+            this.labelControl2.Location = new System.Drawing.Point(184, 5);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(129, 31);
+            this.labelControl2.Size = new System.Drawing.Size(321, 77);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Busqueda";
             // 
             // txtPalabra
             // 
-            this.txtPalabra.Location = new System.Drawing.Point(36, 155);
+            this.txtPalabra.Location = new System.Drawing.Point(96, 370);
+            this.txtPalabra.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtPalabra.Name = "txtPalabra";
-            this.txtPalabra.Size = new System.Drawing.Size(248, 20);
+            this.txtPalabra.Size = new System.Drawing.Size(655, 38);
             this.txtPalabra.TabIndex = 2;
             this.txtPalabra.TextChanged += new System.EventHandler(this.txtPalabra_TextChanged);
             // 
@@ -140,37 +172,22 @@
             // 
             this.labelControl1.AutoSize = true;
             this.labelControl1.Font = new System.Drawing.Font("Times New Roman", 11.75F);
-            this.labelControl1.Location = new System.Drawing.Point(32, 78);
+            this.labelControl1.Location = new System.Drawing.Point(85, 186);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(254, 19);
+            this.labelControl1.Size = new System.Drawing.Size(668, 46);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese una palabra o sus primeras letras";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.75F);
-            this.label1.Location = new System.Drawing.Point(32, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 19);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "La tabla mostrara las palabras identicas";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.75F);
-            this.label2.Location = new System.Drawing.Point(98, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 19);
-            this.label2.TabIndex = 6;
-            // 
             // FrmBusquedaAVL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 310);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1960, 739);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "FrmBusquedaAVL";
             this.Text = "FrmBusquedaAVL";
             this.panel1.ResumeLayout(false);

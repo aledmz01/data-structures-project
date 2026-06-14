@@ -82,6 +82,7 @@
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\NodoAVL.cs" />
+    <Compile Include="Models\NodoTrie.cs" />
     <Compile Include="Models\RegistroHash.cs" />
     <Compile Include="Structures\AVLGloval.cs" />
     <Compile Include="Structures\AVLPalabras.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Palabra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\Trie.cs" />
     <EmbeddedResource Include="Forms\FrmActualizarAVL.resx">
       <DependentUpon>FrmActualizarAVL.cs</DependentUpon>
     </EmbeddedResource>

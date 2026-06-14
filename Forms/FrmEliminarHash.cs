@@ -133,6 +133,8 @@ namespace proyectEstructura
 
             if (menu != null)
             {
+                menu.InitTrie();
+                menu.checkAutocomplete();
                 menu.Show();
             }
 
@@ -145,6 +147,11 @@ namespace proyectEstructura
         }
 
         private void txtPalabra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

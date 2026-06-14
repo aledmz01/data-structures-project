@@ -178,7 +178,10 @@ private void CargarTabla()
 
             if (menu != null)
             {
+                menu.InitTrie();
+                menu.checkAutocomplete();
                 menu.Show();
+                
             }
 
             this.Close();

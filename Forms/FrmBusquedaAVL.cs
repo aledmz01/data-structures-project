@@ -48,6 +48,8 @@ namespace proyectEstructura.Forms
 
             if (menu != null)
             {
+                menu.InitTrie();
+                menu.checkAutocomplete();
                 menu.Show();
             }
 
@@ -79,6 +81,11 @@ namespace proyectEstructura.Forms
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
