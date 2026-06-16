@@ -60,7 +60,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1957, 749);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
@@ -90,7 +89,6 @@
             this.dgvPalabras.RowHeadersWidth = 102;
             this.dgvPalabras.Size = new System.Drawing.Size(773, 463);
             this.dgvPalabras.TabIndex = 0;
-            this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -158,7 +156,6 @@
             this.labelControl2.Size = new System.Drawing.Size(431, 77);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Actualización";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtPalabra
             // 
@@ -191,7 +188,6 @@
             this.labelControl1.Size = new System.Drawing.Size(543, 49);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese la palabra a actualizar:";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // FrmActualizarAVL
             // 
@@ -204,7 +200,6 @@
             this.Name = "FrmActualizarAVL";
             this.ShowIcon = false;
             this.Text = "Actualizar Palabras Reservadas";
-            this.Load += new System.EventHandler(this.FrmActualizarAVL_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

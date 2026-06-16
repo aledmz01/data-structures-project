@@ -59,7 +59,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1971, 756);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
@@ -89,7 +88,6 @@
             this.dgvPalabras.RowHeadersWidth = 102;
             this.dgvPalabras.Size = new System.Drawing.Size(773, 463);
             this.dgvPalabras.TabIndex = 0;
-            this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 

@@ -10,6 +10,6 @@ namespace proyectEstructura.Structures
         public static class AVLGlobal
         {
             public static AVLPalabras Arbol = new AVLPalabras();
-        }
+    }
     
 }

@@ -61,21 +61,6 @@ namespace proyectEstructura.Forms
                          .ToList();
         }
 
-        private void FrmActualizarAVL_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             FrmMenu menu = Application.OpenForms["FrmMenu"] as FrmMenu;
@@ -88,11 +73,6 @@ namespace proyectEstructura.Forms
             }
 
             this.Close();
-        }
-
-        private void dgvPalabras_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
         private void dgvPalabras_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -205,11 +185,6 @@ namespace proyectEstructura.Forms
 
             // Regresa el cursor al TextBox
             txtPalabra.Focus();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -43,36 +43,11 @@ namespace proyectEstructura
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // Ajustar columnas automáticamente
             dgvPalabras.AutoSizeColumnsMode =
                 DataGridViewAutoSizeColumnsMode.Fill;
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelControl1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtPalabra_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         // Inserta una nueva palabra en la tabla hash
@@ -154,21 +129,11 @@ namespace proyectEstructura
         }
 
 
-// Muestra el contenido actual de la tabla hash
-private void CargarTabla()
+        // Muestra el contenido actual de la tabla hash
+        private void CargarTabla()
         {
             dgvPalabras.DataSource = null;
             dgvPalabras.DataSource = HashGlobal.TablaHash.ObtenerRegistros();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
         }
 
         // Regresa al principal menu 
@@ -185,11 +150,6 @@ private void CargarTabla()
             }
 
             this.Close();
-
-        }
-
-        private void dgvPalabras_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }

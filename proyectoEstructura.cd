@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="proyectEstructura.Forms.FrmActualizarAVL">
+    <Position X="8.5" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAwAgAAAASAAADAAAACAAABCAIAAAAkAAAgAAUAAwAA=</HashCode>
+      <FileName>Forms\FrmActualizarAVL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Forms.FrmBusquedaAVL">
+    <Position X="6" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAABAAAACAAABCAIgAAAkAAAgAAUAAgAA=</HashCode>
+      <FileName>Forms\FrmBusquedaAVL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Forms.FrmMenu">
+    <Position X="11.5" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAgBAACQABgAAACCAACFKAEAEIEEgAHAAAAAAAQY=</HashCode>
+      <FileName>Forms\FrmMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.FrmEliminarHash">
+    <Position X="3.5" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAAACAAAAAAAACAAABCiIAAAAkAABgAAUAAwAA=</HashCode>
+      <FileName>Forms\FrmEliminarHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.FrmInsertarHash">
+    <Position X="0.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAAACAkAAAAAACAAABCgIAAAAkAAAwAAUAAgAA=</HashCode>
+      <FileName>Forms\FrmInsertarHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Models.NodoAVL">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NodoAVL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Models.NodoTrie">
+    <Position X="12" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAABAAAAAAAAABAAA=</HashCode>
+      <FileName>Models\NodoTrie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Models.RegistroHash">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RegistroHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Structures.AVLGlobal">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures\AVLGloval.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Arbol" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="proyectEstructura.Structures.AVLPalabras">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAICAAUAACAAAAgABgAAAMABAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Structures\AVLPalabras.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="raiz" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="proyectEstructura.Structures.HashGlobal">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures\HashGlobal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TablaHash" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="proyectEstructura.Structures.HashPalabras">
+    <Position X="5.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAABAgAQAQgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures\HashPalabras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Structures.Trie">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAABAAAQAA=</HashCode>
+      <FileName>Structures\Trie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="nodo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="proyectEstructura.Palabra">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Palabra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="proyectEstructura.Program">
+    <Position X="23.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="6.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="proyectEstructura.Properties.Resources">
+    <Position X="24" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

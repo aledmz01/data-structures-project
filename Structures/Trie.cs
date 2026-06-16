@@ -8,62 +8,62 @@ namespace proyectEstructura.Structures
 {
     internal class Trie
     {
-        private NodoTrie _root;
+        private NodoTrie nodo;
 
         public Trie()
         {
-            _root = new NodoTrie();
+            nodo = new NodoTrie();
         }
 
         /// <summary>
         /// Inserta una palabra en el Trie con una frecuencia inicial.
         /// </summary>
-        public void agregar(string word, int frequency = 1)
+        public void agregar(string palabra, int frequencia = 1)
         {
-            if (string.IsNullOrEmpty(word)) return;
+            if (string.IsNullOrEmpty(palabra)) return;
 
-            NodoTrie nodoActual = _root;
-            foreach (char ch in word)
+            NodoTrie nodoActual = nodo;
+            foreach (char ch in palabra)
             {
-                if (!nodoActual.Children.ContainsKey(ch))
+                if (!nodoActual.Hijo.ContainsKey(ch))
                 {
-                    nodoActual.Children[ch] = new NodoTrie();
+                    nodoActual.Hijo[ch] = new NodoTrie();
                 }
-                nodoActual = nodoActual.Children[ch];
+                nodoActual = nodoActual.Hijo[ch];
             }
 
-            nodoActual.IsEndOfWord = true;
+            nodoActual.EsFinPalabra = true;
             // Si la palabra ya existe, sumamos la frecuencia (ej: la variable se usa mucho)
-            nodoActual.Frequency += frequency;
+            nodoActual.Frecuencia += frequencia;
         }
 
-        public void Clear()
+        public void limpiar()
         {
-            _root = new NodoTrie(); // La raíz vieja queda huérfana y el GC la destruye
+            nodo = new NodoTrie(); // La raíz vieja queda huérfana y el GC la destruye
         }
 
         /// <summary>
         /// Devuelve las sugerencias de autocompletado ordenadas por relevancia.
         /// </summary>
-        public List<string> Autocompletar(string prefijo)
+        public List<string> autocompletar(string prefijo)
         {
             if (string.IsNullOrEmpty(prefijo)) return new List<string>();
 
-            NodoTrie current = _root;
+            NodoTrie current = nodo;
 
             // Navegar hasta el nodo donde termina el prefijo escrito
             foreach (char ch in prefijo)
             {
-                if (!current.Children.ContainsKey(ch))
+                if (!current.Hijo.ContainsKey(ch))
                 {
                     return new List<string>(); // No hay coincidencias
                 }
-                current = current.Children[ch];
+                current = current.Hijo[ch];
             }
 
             // Recolectar todas las palabras que parten de ese prefijo
             List<(string Word, int Freq)> results = new List<(string, int)>();
-            CollectWords(current, prefijo, results);
+            colectarPalabra(current, prefijo, results);
 
             // Ordenar por frecuencia descendentemente usando LINQ
             return results
@@ -73,17 +73,17 @@ namespace proyectEstructura.Structures
         }
 
         // Método auxiliar DFS (Deepth-First Search) para recorrer el árbol
-        private void CollectWords(NodoTrie node, string currentPrefix, List<(string, int)> results)
+        private void colectarPalabra(NodoTrie nodo, string prefijoActual, List<(string, int)> resultados)
         {
-            if (node.IsEndOfWord)
+            if (nodo.EsFinPalabra)
             {
-                results.Add((currentPrefix, node.Frequency));
+                resultados.Add((prefijoActual, nodo.Frecuencia));
             }
 
-            foreach (var child in node.Children)
+            foreach (var child in nodo.Hijo)
             {
                 // child.Key es el carácter, child.Value es el nodo hijo
-                CollectWords(child.Value, currentPrefix + child.Key, results);
+                colectarPalabra(child.Value, prefijoActual + child.Key, resultados);
             }
         }
     }

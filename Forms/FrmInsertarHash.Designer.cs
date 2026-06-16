@@ -59,7 +59,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(741, 314);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
@@ -85,7 +84,6 @@
             this.dgvPalabras.Name = "dgvPalabras";
             this.dgvPalabras.Size = new System.Drawing.Size(290, 194);
             this.dgvPalabras.TabIndex = 0;
-            this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -109,7 +107,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(320, 233);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -119,7 +116,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 36);
             this.panel3.TabIndex = 4;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // labelControl2
             // 
@@ -129,7 +125,6 @@
             this.labelControl2.AutoSize = true;
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Inserción";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtPalabra
             // 
@@ -137,7 +132,6 @@
             this.txtPalabra.Name = "txtPalabra";
             this.txtPalabra.Size = new System.Drawing.Size(248, 21);
             this.txtPalabra.TabIndex = 2;
-            this.txtPalabra.TextChanged += new System.EventHandler(this.txtPalabra_TextChanged);
             // 
             // btnInsertar
             // 
@@ -159,7 +153,6 @@
             this.labelControl1.AutoSize = true;
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese Palabra a insertar :";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // panelControl1
             // 
@@ -169,7 +162,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(746, 316);
             this.panelControl1.TabIndex = 0;
-            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
             // FrmInsertarHash
             // 

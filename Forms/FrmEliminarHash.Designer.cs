@@ -60,7 +60,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1957, 749);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
@@ -90,7 +89,6 @@
             this.dgvPalabras.RowHeadersWidth = 102;
             this.dgvPalabras.Size = new System.Drawing.Size(773, 463);
             this.dgvPalabras.TabIndex = 0;
-            this.dgvPalabras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -137,7 +135,6 @@
             this.labelControl2.Size = new System.Drawing.Size(382, 77);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Eliminación";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtPalabra
             // 
@@ -146,7 +143,6 @@
             this.txtPalabra.Name = "txtPalabra";
             this.txtPalabra.Size = new System.Drawing.Size(681, 38);
             this.txtPalabra.TabIndex = 2;
-            this.txtPalabra.TextChanged += new System.EventHandler(this.txtPalabra_TextChanged);
             // 
             // btnEliminar
             // 
@@ -171,7 +167,6 @@
             this.labelControl1.Size = new System.Drawing.Size(612, 61);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ingrese Palabra a eliminar :";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // panelControl1
             // 

@@ -50,16 +50,6 @@ namespace proyectEstructura
             CargarTabla();
         }
 
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
@@ -139,21 +129,6 @@ namespace proyectEstructura
             }
 
             this.Close();
-        }
-
-        private void dgvPalabras_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtPalabra_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 

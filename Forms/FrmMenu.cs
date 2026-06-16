@@ -248,7 +248,7 @@ namespace proyectEstructura.Forms
             // Disparar autocompletado a partir de 2 caracteres
             if (ultimaPalabra.Length >= 2)
             {
-                List<string> sugerencias = _trie.Autocompletar(ultimaPalabra);
+                List<string> sugerencias = _trie.autocompletar(ultimaPalabra);
 
                 if (sugerencias.Count > 0)
                 {
@@ -264,11 +264,6 @@ namespace proyectEstructura.Forms
             {
                 CerrarMenu();
             }
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -9,6 +9,7 @@ namespace proyectEstructura
 {
     internal static class Program
     {
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

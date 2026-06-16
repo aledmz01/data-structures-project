@@ -37,10 +37,6 @@ namespace proyectEstructura.Forms
                          .Select(p => new { Palabra = p })
                          .ToList();
         }
-        private void dgvPalabras_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
@@ -78,16 +74,6 @@ namespace proyectEstructura.Forms
                 .ToList();
 
             dgvPalabras.DataSource = resultados;
-        }
-
-        private void btnInsertar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
