@@ -69,8 +69,8 @@ namespace proyectEstructura
                 return;
             }
 
-        //No permitir espacios
-        if (palabra.Contains(" "))
+            //No permitir espacios
+            if (palabra.Contains(" "))
             {
                 MessageBox.Show(
                     this,
@@ -129,28 +129,28 @@ namespace proyectEstructura
         }
 
 
-        // Muestra el contenido actual de la tabla hash
-        private void CargarTabla()
-        {
-            dgvPalabras.DataSource = null;
-            dgvPalabras.DataSource = HashGlobal.TablaHash.ObtenerRegistros();
-        }
-
-        // Regresa al principal menu 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            FrmMenu menu = Application.OpenForms["FrmMenu"] as FrmMenu;
-
-            if (menu != null)
+            // Muestra el contenido actual de la tabla hash
+            private void CargarTabla()
             {
-                menu.InitTrie();
-                menu.checkAutocomplete();
-                menu.Show();
-                
+                dgvPalabras.DataSource = null;
+                dgvPalabras.DataSource = HashGlobal.TablaHash.ObtenerRegistros();
             }
 
-            this.Close();
+            // Regresa al principal menu 
+            private void btnRegresar_Click(object sender, EventArgs e)
+            {
+                FrmMenu menu = Application.OpenForms["FrmMenu"] as FrmMenu;
 
-        }
+                if (menu != null)
+                {
+                    menu.InitTrie();
+                    menu.checkAutocomplete();
+                    menu.Show();
+                
+                }
+
+                this.Close();
+
+            }
     }
 }

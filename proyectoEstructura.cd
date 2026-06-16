@@ -20,6 +20,9 @@
       <HashCode>AQAQAgBAACQABgAAACCAACFKAEAEIEEgAHAAAAAAAQY=</HashCode>
       <FileName>Forms\FrmMenu.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_trie" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="proyectEstructura.FrmEliminarHash">
     <Position X="3.5" Y="10.75" Width="2.25" />
